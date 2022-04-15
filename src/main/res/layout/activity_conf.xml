@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repText"
+        android:text="Reps:"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repNum"
+        android:layout_alignBottom="@+id/repText"
+        android:layout_toRightOf="@+id/repText"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:hint="A number of repetitions"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restText"
+        android:text="Rest time:"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/repText"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restTime"
+        android:layout_alignBottom="@+id/restText"
+        android:layout_toRightOf="@+id/restText"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:hint="Rest time in second"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/restText"
+        android:layout_marginTop="150dp"
+        android:text="start"/>
+
+</RelativeLayout>
